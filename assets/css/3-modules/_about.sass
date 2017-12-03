@@ -1,6 +1,32 @@
 // About Me Styling
 .about-me
-    
     .face-lockup
         max-width: 780px
         +display(flex)
+        margin: 0 auto
+        +align-items(center)
+        justify-content: space-around
+        padding: 30px 0 50px 0
+
+        .face-image
+            +size(200px)
+            background: url(/assets/img/myface.jpg)
+            order: 2
+
+
+        [class^="icon-"]
+            +size(100px)
+            border-radius: 50%
+            background: $bg-color
+            border-radius: 50%
+        
+            &.icon-mouse
+                order: 1
+            &.icon-browser
+                order: 3
+            
+    p
+        max-width: 630px
+        text-align: center
+        margin: 0 auto
+        
