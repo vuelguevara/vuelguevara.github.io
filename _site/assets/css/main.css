@@ -180,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-title {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1.625rem;
   text-transform: uppercase;
   color: #333333;
   text-align: center;
@@ -327,21 +327,21 @@ footer {
   -ms-flex-align: center;
   justify-content: space-around;
   padding: 30px 0 50px 0; }
-  .about-me .face-lockup .face-image {
-    height: 200px;
-    width: 200px;
-    background: url(/assets/img/myface.jpg);
-    order: 2; }
-  .about-me .face-lockup [class^="icon-"] {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background: #e5eaee;
-    border-radius: 50%; }
-    .about-me .face-lockup [class^="icon-"].icon-mouse {
-      order: 1; }
-    .about-me .face-lockup [class^="icon-"].icon-browser {
-      order: 3; }
+.about-me .face-image {
+  height: 200px;
+  width: 200px;
+  background: url(/assets/img/myface.jpg);
+  order: 2; }
+.about-me [class^="icon-"] {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: #e5eaee;
+  border-radius: 50%; }
+  .about-me [class^="icon-"].icon-mouse {
+    order: 1; }
+  .about-me [class^="icon-"].icon-browser {
+    order: 3; }
 .about-me .wrapper {
   max-width: 680px;
   display: block;
@@ -365,7 +365,10 @@ footer {
     max-width: 100px;
     max-height: 100px;
     margin: 0 0 0 10px; }
-.about-me p {
-  max-width: 630px;
+.about-me .blurb {
+  max-width: 620px;
   text-align: center;
-  margin: 0 auto; }
+  margin: 50px auto;
+  padding: 0 15px;
+  font-size: 24px;
+  font-weight: 300; }
