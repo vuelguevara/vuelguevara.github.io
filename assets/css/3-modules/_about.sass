@@ -8,6 +8,22 @@
         justify-content: space-around
         padding: 30px 0 50px 0
 
+    @media screen and (max-width: 650px)
+        .face-lockup
+            display: block
+            text-align: center
+
+            div
+                display: inline-block
+            .face-image
+                display: block
+                background-position: center center
+                background-repeat: no-repeat
+                width: auto
+                margin-bottom: 30px
+            [class^="icon-"]
+                margin: 10px
+                
     .face-image
         +size(200px)
         background: url(/assets/img/myface.jpg)
@@ -38,6 +54,22 @@
         &--no-padding
             padding: 0
 
+    @media screen and (max-width: 650px)
+        .wrapper
+            max-width: 300px
+            display: block
+            margin: 0 auto
+            +align-items(center)
+            justify-content: space-around
+            padding: 30px 0 50px 0
+
+            &--small
+                max-width: 260px
+
+            &--no-padding
+                padding: 0
+
+
         .logo
             max-width: 100px
             max-height: 100px
@@ -51,4 +83,10 @@
         font-size: 24px
         font-weight: 300
 
-        
+    @media screen and (max-width: 650px)
+        max-width: 620px
+        text-align: center
+        margin: 50px auto
+        padding: 0 15px
+        font-size: 12px
+        font-weight: 300
