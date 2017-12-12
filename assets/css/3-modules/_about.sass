@@ -1,5 +1,7 @@
 // About Me Styling
 .about-me
+
+    
     .face-lockup
         max-width: 780px
         +display(flex)
@@ -23,6 +25,7 @@
                 margin-bottom: 30px
             [class^="icon-"]
                 margin: 10px
+            
                 
     .face-image
         +size(200px)
@@ -49,31 +52,20 @@
         padding: 30px 0 50px 0
 
         &--small
-            max-width: 455px
+            max-width: 452px
 
         &--no-padding
             padding: 0
-
-    @media screen and (max-width: 650px)
-        .wrapper
-            max-width: 300px
-            display: block
-            margin: 0 auto
-            +align-items(center)
-            justify-content: space-around
-            padding: 30px 0 50px 0
-
-            &--small
-                max-width: 260px
-
-            &--no-padding
-                padding: 0
 
 
         .logo
             max-width: 100px
             max-height: 100px
             margin: 0 0 0 10px
+
+    @media screen and (max-width: 690px)
+        .wrapper
+            max-width: 235px        
 
     .blurb
         max-width: 620px
@@ -83,10 +75,4 @@
         font-size: 24px
         font-weight: 300
 
-    @media screen and (max-width: 650px)
-        max-width: 620px
-        text-align: center
-        margin: 50px auto
-        padding: 0 15px
-        font-size: 12px
-        font-weight: 300
+
