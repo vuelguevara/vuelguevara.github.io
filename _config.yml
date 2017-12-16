@@ -1,5 +1,9 @@
-# Build settings
+#Site settings
+title: Vuel Guevara
+description: Thinker // Designer // Developer
+email: vuelguevara@gmail.com
 
+# Build settings
 markdown: kramdown
 permalink: pretty
 
