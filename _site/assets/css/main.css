@@ -399,7 +399,6 @@ footer {
     order: 1;
     -ms-flex-order: 1; }
   .about-me [class^="icon-"].icon-browser {
-<<<<<<< HEAD
     -webkit-box-ordinal-group: 3;
     -moz-box-ordinal-group: 3;
     box-ordinal-group: 3;
@@ -433,9 +432,6 @@ footer {
 @media screen and (max-width: 690px) {
   .about-me .wrapper {
     max-width: 235px; } }
-=======
-    order: 3; }
->>>>>>> cad0c4705cbc274af510d2987261ef8521abf6a2
 .about-me .blurb {
   max-width: 620px;
   text-align: center;
