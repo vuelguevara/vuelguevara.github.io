@@ -442,6 +442,8 @@ footer {
 
 .work {
   background-color: rgba(0, 0, 0, 0.1); }
+  .work .work-container {
+    visibility: hidden; }
   .work .thumb-unit {
     display: block;
     float: left;
