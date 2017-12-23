@@ -442,13 +442,20 @@ footer {
 
 .work {
   background-color: rgba(0, 0, 0, 0.1); }
-  .work .work-container {
-    visibility: hidden; }
+  .work--overflowx-hidden {
+    overflow-x: hidden; }
+  .work .work-belt {
+    width: 200%;
+    position: relative;
+    left: -100%; }
+  .work .work-wrap, .work .thumb-wrap {
+    width: 50%;
+    float: left; }
   .work .thumb-unit {
     display: block;
     float: left;
     width: 220px;
-    height: 150px;
+    height: 170px;
     margin: 0 0 5px 5px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -500,3 +507,24 @@ footer {
       top: 50%;
       right: 0px;
       left: 50px; }
+  .work .work-container {
+    max-width: 600px;
+    margin: 0px auto; }
+    .work .work-container .work-headline {
+      text-align: center;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 1.2;
+      text-transform: uppercase; }
+    .work .work-container img {
+      max-width: 100%;
+      margin-bottom: 20px; }
+    .work .work-container .work-return {
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+      opacity: 0.3;
+      position: absolute;
+      top: 22px; }
+      .work .work-container .work-return:hover {
+        opacity: 1; }
