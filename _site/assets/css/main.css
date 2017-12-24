@@ -447,7 +447,10 @@ footer {
   .work .work-belt {
     width: 200%;
     position: relative;
-    left: -100%; }
+    left: 0%;
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s; }
   .work .work-wrap, .work .thumb-wrap {
     width: 50%;
     float: left; }
@@ -475,7 +478,8 @@ footer {
       height: 100%;
       -webkit-transition: all 0.15s ease-out 0s;
       -moz-transition: all 0.15s ease-out 0s;
-      transition: all 0.15s ease-out 0s; }
+      transition: all 0.15s ease-out 0s;
+      cursor: pointer; }
       .work .thumb-unit .thumb-overlay strong {
         display: block;
         padding: 20px;
@@ -496,7 +500,8 @@ footer {
       height: 100%;
       -webkit-transition: all 0.15s ease-out 0s;
       -moz-transition: all 0.15s ease-out 0s;
-      transition: all 0.15s ease-out 0s; }
+      transition: all 0.15s ease-out 0s;
+      cursor: pointer; }
     .work .thumb-unit:hover .thumb-overlay {
       position: absolute;
       top: 0%;
