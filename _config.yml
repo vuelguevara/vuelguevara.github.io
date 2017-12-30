@@ -7,7 +7,7 @@ email: vuelguevara@gmail.com
 markdown: kramdown
 permalink: pretty
 
-port: 3000
+port: 4000
 
 sass:
   sass_dir: assets/css
