@@ -471,12 +471,14 @@ footer {
     .about-me .face-lockup [class^="icon-"] {
       margin: 10px; }
   .about-me .icon-mouse {
+    visibility: hidden;
     display: none;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -12; }
   .about-me .icon-browser {
+    visibility: hidden;
     display: none;
     position: absolute;
     top: 0;
@@ -653,3 +655,97 @@ footer {
       top: 22px; }
       .work .work-container .work-return:hover {
         opacity: 1; }
+
+.clients {
+  position: relative; }
+  .clients .client-slides-container {
+    width: 100%;
+    position: relative; }
+    .clients .client-slides-container .client-slide {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      max-width: 750px;
+      margin: 0 auto 50px -375px;
+      display: none; }
+      .clients .client-slides-container .client-slide--active {
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex; }
+      .clients .client-slides-container .client-slide .client-profile-pic {
+        min-width: 300px;
+        text-align: center; }
+        .clients .client-slides-container .client-slide .client-profile-pic img {
+          max-width: 100px;
+          border-radius: 50%; }
+        .clients .client-slides-container .client-slide .client-profile-pic .client-name {
+          display: block;
+          text-transform: uppercase;
+          font-weight: 500;
+          letter-spacing: 1px; }
+        .clients .client-slides-container .client-slide .client-profile-pic .client-title {
+          font-style: normal;
+          font-size: 12px;
+          color: #999; }
+      .clients .client-slides-container .client-slide .client-profile-description {
+        font-size: 18px;
+        line-height: 36px;
+        font-weight: 300; }
+  .clients .client-logo-container {
+    position: relative;
+    max-width: 750px;
+    margin: 350px auto 100px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: space-around;
+    -moz-box-align: space-around;
+    box-align: space-around;
+    -webkit-align-items: space-around;
+    -moz-align-items: space-around;
+    -ms-align-items: space-around;
+    -o-align-items: space-around;
+    align-items: space-around;
+    -ms-flex-align: space-around;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center; }
+    .clients .client-logo-container .client-logo {
+      height: 80px;
+      min-width: 200px;
+      margin: 0 20px;
+      cursor: pointer; }
+      .clients .client-logo-container .client-logo--active {
+        box-shadow: 0px 4px 0px #333; }
+  .clients .client-controls {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px; }
+    .clients .client-controls .next-button {
+      position: absolute;
+      top: 40%;
+      right: 50px;
+      z-index: 10;
+      cursor: pointer; }
+    .clients .client-controls .back-button {
+      position: absolute;
+      top: 40%;
+      left: 50px;
+      z-index: 10;
+      cursor: pointer; }
