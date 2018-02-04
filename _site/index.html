@@ -31,7 +31,6 @@
             <a href="#about">About Me</a>
             <a href="#work">Work</a>
             <a href="#contact">Contact</a>
-            <a href="">Message me!</a>
         </nav>
 
         <h1 class="hero-title"><span class="title-border">Vuel Guevara</span></h1>
@@ -236,9 +235,28 @@
     <div class="my-email">
         <a href="mailto:vuelguevara@gmail.com">vuelguevara@gmail.com</a>
     </div>
-</section>
 
-<h3 style="text-align:center">This page is still under construction.</h3>
+    <div class="contact-form">
+        <form method="POST" action="https://formspree.io/vuelguevara@gmail.com">
+            <div class="contact-info"> 
+            <label for="name"> <span>Your Name</span>
+            <input id="name" type="text" name="name">
+            </label>
+
+            <label for="_replyto"> <span>Your Email</span>
+            <input id="_replyto" type="email" name="_replyto">
+            </label>
+            </div>
+
+            <label for="message"> <span>Your Message</span>
+            <textarea id="message" name="message"></textarea>
+            </label>
+            <div class="submit-wrap">
+            <input type="submit" value="Send">
+            </div>
+        </form>
+    </div>
+</section>
 
 <footer>
 
@@ -264,8 +282,7 @@
                         <nav class="main-nav">
                             <a href="#about">About Me</a>
                             <a href="#work">Work</a>
-                            <a href="">Services</a>
-                            <a href="">Contact</a>
+                            <a href="#contact">Contact</a>
                         </nav>
 
                 <p class="copyright">Vuel Guevara &copy; 2017</p>

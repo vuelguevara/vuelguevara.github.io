@@ -693,7 +693,7 @@ footer {
   width: 250px;
   height: 0px;
   border-top: 4px solid #333333;
-  margin: 0px auto 50px; }
+  margin: 0px auto 5px; }
 
 .my-email {
   text-align: center; }
@@ -706,3 +706,53 @@ footer {
 @media (max-width: 800px) {
   .my-email a {
     font-size: 32px; } }
+form {
+  max-width: 450px;
+  margin: 0px auto 50px; }
+  form input, form textarea {
+    border: 3px solid #333333;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px; }
+    form input:focus, form textarea:focus {
+      outline: none;
+      border-color: rgba(0, 0, 0, 0.5); }
+  form textarea {
+    height: 10em; }
+  form .submit-wrap {
+    text-align: center; }
+  form [type="submit"] {
+    background: #333333;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 33%;
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s; }
+    form [type="submit"]:hover {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2); }
+  form .contact-info label {
+    width: 50%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    form .contact-info label:nth-child(1) {
+      padding-right: 10px; }
+    form .contact-info label:nth-child(2) {
+      padding-right: 10px; }
+  form label {
+    display: block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600; }
+    form label span {
+      display: block; }

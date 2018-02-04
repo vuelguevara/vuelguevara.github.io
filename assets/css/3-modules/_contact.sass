@@ -17,7 +17,7 @@
     width: 250px
     height: 0px
     border-top: 4px solid $accent-color
-    margin: 0px auto 50px
+    margin: 0px auto 5px
 
     
 .my-email
@@ -35,3 +35,54 @@
     .my-email
         a
             font-size: 32px
+
+form
+    max-width: 450px
+    margin: 0px auto 50px
+
+    input, textarea
+        border: 3px solid $accent-color
+        width: 100%
+        @include box-sizing(border-box)
+        padding: 10px
+        &:focus
+            outline: none
+            border-color: rgba(0, 0, 0, .5)
+
+    textarea
+        height: 10em
+
+    .submit-wrap
+        text-align: center
+
+    [type="submit"]
+        background: $accent-color
+        color: white
+        font-size: 18px
+        text-transform: uppercase
+        width: 33%
+        @include transition
+
+        &:hover 
+            @include transform(scale(1.2))
+
+    .contact-info
+        label
+            width: 50%
+            float: left
+            @include box-sizing(border-box)
+
+            &:nth-child(1)
+                padding-right: 10px
+            &:nth-child(2)
+                padding-right: 10px
+
+    label
+        display: block
+        margin-bottom: 20px
+        text-transform: uppercase
+        text-align: center
+        font-weight: 600
+        span
+            display: block
+        
